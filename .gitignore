@@ -216,3 +216,26 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---------------------------------------------------------------------------
+# Project-Specific: Fake Job Posting Detection (Fake-JD)
+# ---------------------------------------------------------------------------
+
+# Datasets and raw files (exclude large files; structure preserved via .gitkeep)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/cross_platform_postings.csv
+
+# Derived matrices and temporary files
+*.npz
+new.py
+
+# Streamlit app (kept local until ready)
+app/
+
+# Trained model artifacts (kept local until ready)
+models/*.joblib
+!models/.gitkeep
+

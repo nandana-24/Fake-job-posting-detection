@@ -1,0 +1,383 @@
+﻿ID,Platform,Account Handle,Job Title,Company (as advertised),Work Mode,Shifts Listed,Salary Range (INR/month),Requirements Listed,Target Audience,Contact Channel,Red Flags Identified,Red Flag Count,Brand Impersonation?,Label,Notes,Date Collected,Source File
+1,Instagram,careerhub_india24,Work From Home Data Entry Executive,Amazon (impersonated),Work From Home,Part-time: 4 hours/day; Full-time: 8-9 hours/day; flexible timing,"₹18,000 - ₹35,000/month",Minimum 10th pass; smartphone required; good communication skills,"students, homemakers, freshers, retired persons, part-time job seekers",WhatsApp only,Vague duties; inflated salary for entry-level work; no verifiable application portal; Very broad target audience; minimal qualifications; unusually high salary; Randomized/generic social-media account name; Registration through QR code or messaging app rather than formal application; Target-based compensation mentioned instead of a clearly fixed salary,5,Yes - Amazon,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+2,Facebook,workfromhome_updates,Online Form Filling Executive,Flipkart (impersonated),Work From Home,Morning 7AM-11AM; Evening 5PM-9PM; Night 10PM-2AM,"₹25,000 - ₹50,000/month",12th pass or above; smartphone and internet connection; basic English,"women candidates, students, recent graduates, caregivers, people seeking extra income",Telegram DM,Brand impersonation; WhatsApp/Telegram-only contact; no official recruiter identity; Training/support promised without employer details; no formal job description,2,Yes - Flipkart,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+3,Telegram,quickjob_connect,Customer Support Associate,Meesho (impersonated),Work From Home,Flexible: 3-5 hours/day; choose your preferred time,"₹30,000 - ₹65,000/month",10th pass; responsible and disciplined; able to work independently,"10th/12th pass candidates, freshers, homemakers and unemployed job seekers",WhatsApp / Call,Very broad target audience; minimal qualifications; unusually high salary; Unclear company identity; generic recruiter handle; no verifiable corporate email,2,Yes - Meesho,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+4,WhatsApp Groups,hirefast_remote,Back Office Executive,Tata (impersonated),Work From Home,Part-time 5 hours/day; full-time 9 hours/day,"₹40,000 - ₹75,000/month",Any qualification; mobile phone required; basic communication skills,"students, teachers, new parents, retirees and anyone seeking flexible income",Direct message,Female-only eligibility without a job-related explanation; vague role description; Very broad target audience; minimal qualifications; unusually high salary; Randomized/generic social-media account name,3,Yes - Tata,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+5,LinkedIn,jobdesk_daily,Online Verification Executive,Reliance (impersonated),Work From Home,Morning 8AM-12PM; Afternoon 2PM-6PM; Evening 7PM-11PM,"₹22,000 - ₹45,000/month",Minimum 12th pass; WhatsApp available; no prior experience required,freshers and experienced candidates looking for immediate work from home,WhatsApp + QR registration,Immediate joining pressure; no interview details; QR-code registration; Training/support promised without employer details; no formal job description; Registration through QR code or messaging app rather than formal application,3,Yes - Reliance,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+6,Instagram,careerpoint_now,Telecalling Executive,Swiggy (impersonated),Work From Home,Part-time: 4 hours/day; Full-time: 8-9 hours/day; flexible timing,"₹35,000 - ₹80,000/month",Minimum 10th pass; smartphone required; good communication skills,"students, homemakers, freshers, retired persons, part-time job seekers",Phone call / WhatsApp,Training/support promised without employer details; no formal job description; Unclear company identity; generic recruiter handle; no verifiable corporate email; Target-based compensation mentioned instead of a clearly fixed salary,3,Yes - Swiggy,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+7,Facebook,homejobs_india,Remote Documentation Assistant,Jio (impersonated),Work From Home,Morning 7AM-11AM; Evening 5PM-9PM; Night 10PM-2AM,"₹18,000 - ₹35,000/month",12th pass or above; smartphone and internet connection; basic English,"women candidates, students, recent graduates, caregivers, people seeking extra income",WhatsApp only,No experience required despite high salary; informal contact channel; Very broad target audience; minimal qualifications; unusually high salary; Randomized/generic social-media account name,3,Yes - Jio,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+8,Telegram,earnwork_online,Chat Support Executive,Myntra (impersonated),Work From Home,Flexible: 3-5 hours/day; choose your preferred time,"₹25,000 - ₹50,000/month",10th pass; responsible and disciplined; able to work independently,"10th/12th pass candidates, freshers, homemakers and unemployed job seekers",Telegram DM,Salary presented without clear fixed/variable breakdown; target-based wording; Training/support promised without employer details; no formal job description,2,Yes - Myntra,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+9,WhatsApp Groups,remotejobs_alert,KYC Data Verification Executive,Infosys (impersonated),Work From Home,Part-time 5 hours/day; full-time 9 hours/day,"₹30,000 - ₹65,000/month",Any qualification; mobile phone required; basic communication skills,"students, teachers, new parents, retirees and anyone seeking flexible income",WhatsApp / Call,Unclear company identity; generic recruiter handle; no verifiable corporate email; Unclear company identity; generic recruiter handle; no verifiable corporate email; Registration through QR code or messaging app rather than formal application,3,Yes - Infosys,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+10,LinkedIn,jobassist_2026,Work From Home Process Associate,Unknown Private Company,Work From Home,Morning 8AM-12PM; Afternoon 2PM-6PM; Evening 7PM-11PM,"₹40,000 - ₹75,000/month",Minimum 12th pass; WhatsApp available; no prior experience required,freshers and experienced candidates looking for immediate work from home,Direct message,Vague duties; inflated salary for entry-level work; no verifiable application portal; Very broad target audience; minimal qualifications; unusually high salary; Randomized/generic social-media account name,3,No,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+11,Instagram,career_wave,Online Survey Executive,Amazon (impersonated),Work From Home,Part-time: 4 hours/day; Full-time: 8-9 hours/day; flexible timing,"₹22,000 - ₹45,000/month",Minimum 10th pass; smartphone required; good communication skills,"students, homemakers, freshers, retired persons, part-time job seekers",WhatsApp + QR registration,Brand impersonation; WhatsApp/Telegram-only contact; no official recruiter identity; Training/support promised without employer details; no formal job description; Target-based compensation mentioned instead of a clearly fixed salary,3,Yes - Amazon,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+12,Facebook,worksmart_hub,E-Commerce Support Executive,Flipkart (impersonated),Work From Home,Morning 7AM-11AM; Evening 5PM-9PM; Night 10PM-2AM,"₹35,000 - ₹80,000/month",12th pass or above; smartphone and internet connection; basic English,"women candidates, students, recent graduates, caregivers, people seeking extra income",Phone call / WhatsApp,Very broad target audience; minimal qualifications; unusually high salary; Unclear company identity; generic recruiter handle; no verifiable corporate email,2,Yes - Flipkart,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+13,Telegram,jobconnect_today,Work From Home Data Entry Executive,Meesho (impersonated),Work From Home,Flexible: 3-5 hours/day; choose your preferred time,"₹18,000 - ₹35,000/month",10th pass; responsible and disciplined; able to work independently,"10th/12th pass candidates, freshers, homemakers and unemployed job seekers",WhatsApp only,Female-only eligibility without a job-related explanation; vague role description; Very broad target audience; minimal qualifications; unusually high salary; Randomized/generic social-media account name; Registration through QR code or messaging app rather than formal application,4,Yes - Meesho,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+14,WhatsApp Groups,hiringdesk_india,Online Form Filling Executive,Tata (impersonated),Work From Home,Part-time 5 hours/day; full-time 9 hours/day,"₹25,000 - ₹50,000/month",Any qualification; mobile phone required; basic communication skills,"students, teachers, new parents, retirees and anyone seeking flexible income",Telegram DM,Immediate joining pressure; no interview details; QR-code registration; Training/support promised without employer details; no formal job description,2,Yes - Tata,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+15,LinkedIn,flexijob_updates,Customer Support Associate,Reliance (impersonated),Work From Home,Morning 8AM-12PM; Afternoon 2PM-6PM; Evening 7PM-11PM,"₹30,000 - ₹65,000/month",Minimum 12th pass; WhatsApp available; no prior experience required,freshers and experienced candidates looking for immediate work from home,WhatsApp / Call,Training/support promised without employer details; no formal job description; Unclear company identity; generic recruiter handle; no verifiable corporate email,2,Yes - Reliance,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+16,Instagram,careeropps_daily,Back Office Executive,Swiggy (impersonated),Work From Home,Part-time: 4 hours/day; Full-time: 8-9 hours/day; flexible timing,"₹40,000 - ₹75,000/month",Minimum 10th pass; smartphone required; good communication skills,"students, homemakers, freshers, retired persons, part-time job seekers",Direct message,No experience required despite high salary; informal contact channel; Very broad target audience; minimal qualifications; unusually high salary; Randomized/generic social-media account name; Target-based compensation mentioned instead of a clearly fixed salary,4,Yes - Swiggy,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+17,Facebook,jobtrack_online,Online Verification Executive,Jio (impersonated),Work From Home,Morning 7AM-11AM; Evening 5PM-9PM; Night 10PM-2AM,"₹22,000 - ₹45,000/month",12th pass or above; smartphone and internet connection; basic English,"women candidates, students, recent graduates, caregivers, people seeking extra income",WhatsApp + QR registration,Salary presented without clear fixed/variable breakdown; target-based wording; Training/support promised without employer details; no formal job description; Registration through QR code or messaging app rather than formal application,3,Yes - Jio,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+18,Telegram,remote_careers24,Telecalling Executive,Myntra (impersonated),Work From Home,Flexible: 3-5 hours/day; choose your preferred time,"₹35,000 - ₹80,000/month",10th pass; responsible and disciplined; able to work independently,"10th/12th pass candidates, freshers, homemakers and unemployed job seekers",Phone call / WhatsApp,Unclear company identity; generic recruiter handle; no verifiable corporate email; Unclear company identity; generic recruiter handle; no verifiable corporate email,2,Yes - Myntra,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+19,WhatsApp Groups,freshers_workhub,Remote Documentation Assistant,Infosys (impersonated),Work From Home,Part-time 5 hours/day; full-time 9 hours/day,"₹18,000 - ₹35,000/month",Any qualification; mobile phone required; basic communication skills,"students, teachers, new parents, retirees and anyone seeking flexible income",WhatsApp only,Vague duties; inflated salary for entry-level work; no verifiable application portal; Very broad target audience; minimal qualifications; unusually high salary; Randomized/generic social-media account name,3,Yes - Infosys,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+20,LinkedIn,employment_alerts,Chat Support Executive,Unknown Private Company,Work From Home,Morning 8AM-12PM; Afternoon 2PM-6PM; Evening 7PM-11PM,"₹25,000 - ₹50,000/month",Minimum 12th pass; WhatsApp available; no prior experience required,freshers and experienced candidates looking for immediate work from home,Telegram DM,Brand impersonation; WhatsApp/Telegram-only contact; no official recruiter identity; Training/support promised without employer details; no formal job description,2,No,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+21,Instagram,careerhub_india24,KYC Data Verification Executive,Amazon (impersonated),Work From Home,Part-time: 4 hours/day; Full-time: 8-9 hours/day; flexible timing,"₹30,000 - ₹65,000/month",Minimum 10th pass; smartphone required; good communication skills,"students, homemakers, freshers, retired persons, part-time job seekers",WhatsApp / Call,Very broad target audience; minimal qualifications; unusually high salary; Unclear company identity; generic recruiter handle; no verifiable corporate email; Registration through QR code or messaging app rather than formal application; Target-based compensation mentioned instead of a clearly fixed salary,4,Yes - Amazon,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+22,Facebook,workfromhome_updates,Work From Home Process Associate,Flipkart (impersonated),Work From Home,Morning 7AM-11AM; Evening 5PM-9PM; Night 10PM-2AM,"₹40,000 - ₹75,000/month",12th pass or above; smartphone and internet connection; basic English,"women candidates, students, recent graduates, caregivers, people seeking extra income",Direct message,Female-only eligibility without a job-related explanation; vague role description; Very broad target audience; minimal qualifications; unusually high salary; Randomized/generic social-media account name,3,Yes - Flipkart,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+23,Telegram,quickjob_connect,Online Survey Executive,Meesho (impersonated),Work From Home,Flexible: 3-5 hours/day; choose your preferred time,"₹22,000 - ₹45,000/month",10th pass; responsible and disciplined; able to work independently,"10th/12th pass candidates, freshers, homemakers and unemployed job seekers",WhatsApp + QR registration,Immediate joining pressure; no interview details; QR-code registration; Training/support promised without employer details; no formal job description,2,Yes - Meesho,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+24,WhatsApp Groups,hirefast_remote,E-Commerce Support Executive,Tata (impersonated),Work From Home,Part-time 5 hours/day; full-time 9 hours/day,"₹35,000 - ₹80,000/month",Any qualification; mobile phone required; basic communication skills,"students, teachers, new parents, retirees and anyone seeking flexible income",Phone call / WhatsApp,Training/support promised without employer details; no formal job description; Unclear company identity; generic recruiter handle; no verifiable corporate email,2,Yes - Tata,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+25,LinkedIn,jobdesk_daily,Work From Home Data Entry Executive,Reliance (impersonated),Work From Home,Morning 8AM-12PM; Afternoon 2PM-6PM; Evening 7PM-11PM,"₹18,000 - ₹35,000/month",Minimum 12th pass; WhatsApp available; no prior experience required,freshers and experienced candidates looking for immediate work from home,WhatsApp only,No experience required despite high salary; informal contact channel; Very broad target audience; minimal qualifications; unusually high salary; Randomized/generic social-media account name; Registration through QR code or messaging app rather than formal application,4,Yes - Reliance,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+26,Instagram,careerpoint_now,Online Form Filling Executive,Swiggy (impersonated),Work From Home,Part-time: 4 hours/day; Full-time: 8-9 hours/day; flexible timing,"₹25,000 - ₹50,000/month",Minimum 10th pass; smartphone required; good communication skills,"students, homemakers, freshers, retired persons, part-time job seekers",Telegram DM,Salary presented without clear fixed/variable breakdown; target-based wording; Training/support promised without employer details; no formal job description; Target-based compensation mentioned instead of a clearly fixed salary,3,Yes - Swiggy,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+27,Facebook,homejobs_india,Customer Support Associate,Jio (impersonated),Work From Home,Morning 7AM-11AM; Evening 5PM-9PM; Night 10PM-2AM,"₹30,000 - ₹65,000/month",12th pass or above; smartphone and internet connection; basic English,"women candidates, students, recent graduates, caregivers, people seeking extra income",WhatsApp / Call,Unclear company identity; generic recruiter handle; no verifiable corporate email; Unclear company identity; generic recruiter handle; no verifiable corporate email,2,Yes - Jio,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+28,Telegram,earnwork_online,Back Office Executive,Myntra (impersonated),Work From Home,Flexible: 3-5 hours/day; choose your preferred time,"₹40,000 - ₹75,000/month",10th pass; responsible and disciplined; able to work independently,"10th/12th pass candidates, freshers, homemakers and unemployed job seekers",Direct message,Vague duties; inflated salary for entry-level work; no verifiable application portal; Very broad target audience; minimal qualifications; unusually high salary; Randomized/generic social-media account name,3,Yes - Myntra,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+29,WhatsApp Groups,remotejobs_alert,Online Verification Executive,Infosys (impersonated),Work From Home,Part-time 5 hours/day; full-time 9 hours/day,"₹22,000 - ₹45,000/month",Any qualification; mobile phone required; basic communication skills,"students, teachers, new parents, retirees and anyone seeking flexible income",WhatsApp + QR registration,Brand impersonation; WhatsApp/Telegram-only contact; no official recruiter identity; Training/support promised without employer details; no formal job description; Registration through QR code or messaging app rather than formal application,3,Yes - Infosys,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+30,LinkedIn,jobassist_2026,Telecalling Executive,Unknown Private Company,Work From Home,Morning 8AM-12PM; Afternoon 2PM-6PM; Evening 7PM-11PM,"₹35,000 - ₹80,000/month",Minimum 12th pass; WhatsApp available; no prior experience required,freshers and experienced candidates looking for immediate work from home,Phone call / WhatsApp,Very broad target audience; minimal qualifications; unusually high salary; Unclear company identity; generic recruiter handle; no verifiable corporate email,2,No,Fraudulent,"Synthetic fraudulent posting generated from the uploaded work-from-home ad and the patterns recorded in the user's spreadsheet; intended for model testing, not presented as a real listing.",22-09-2026,Synthetic_from_uploaded_image_and_log
+31,Instagram,Lxwahlbgtgo,Data entry assistant,Meesho (impersonated),Work From Home,Morning 7AM-1PM; Evening 6PM-10PM; Night 11PM-3AM,"45,000 - 80,000","Responsible, respectful, able to work independently","New parents, teachers, students, caregivers, hospitality professionals, retirees, recent graduates, stay-at-home parents, anyone seeking extra income",Contact number given,Vague job title/duties; inflated salary for unskilled role; odd shift timings; overly broad target audience; no real skill requirements; randomized bot-like username; brand impersonation (Meesho); WhatsApp-based contact instead of formal application,7,Yes- Meesho,Fraudulent,Original,22-09-2026,
+32,Instagram,Vqddtvunqjcge,Data entry assistant,Meesho (impersonated),Work From Home,Morning 9:00-11:00; Evening 14:00-17:00; Night 19:00-21:00,"42,000 - 88,000","Age 22+; responsible, respectful, able to work independently","New parents, teachers, students, caregivers, hospitality professionals, retirees, stay-at-home parents",Contact number given,Vague job title/duties; inflated salary for unskilled role; unusually short/odd shift windows; overly broad target audience; minimal real requirements; randomized bot-like username; brand impersonation (Meesho); WhatsApp-based contact instead of formal application,7,Yes-Meesho,Fraudulent,Original,22-09-2026,
+33,WhatsApp Groups,tutors_academy,Online tuition requirement,,Online,"4 days a week, minimum 1 hour daily",1000 per hour,Enthusiastic mathematics professionals are welcome,Male or female,Contact number given,"Broad target audience, unclear identity",2,No,High chances to be fraudulent,,22-09-2026,
+34,Instagram,work_from_home,Mobile typing job,,Work From Home,Flexible working hours,not mentioned,,Female,Telegram DM,"Unclear company identity, no salary mentioned, ",2,No,Fraudulent,Original,22-09-2026,
+35,Instagram,work from home,Data entry assistant,Infosys (impersonated),Work From Home,Morning 7AM-1PM; Evening 6PM-10PM; Night 11PM-3AM,45000-80000,"Age 23+; responsible, respectful, able to work independently","New parents, teachers, students, caregivers, hospitality professionals, retirees, recent graduates, stay-at-home parents, anyone seeking extra income",Instagram DM,Vague job title/duties; inflated salary for unskilled role; unusually short/odd shift windows; overly broad target audience; minimal real requirements; randomized bot-like username; brand impersonation (Meesho); WhatsApp-based contact instead of formal application,7,Yes-Infosys,Fraudulent,Original,23-09-2026,
+36,LinkedIn (Kaggle dataset),Dollar Tree Stores,OPERATIONS ASSISTANT MANAGER,Dollar Tree Stores,Full-time,,Not specified,"Store Dollar Tree
+
+Work where you love to shop! Dollar Tree is hiring in your neighborhood. Avoid long commutes and set your own course to success by applying today.
+
+We offer generous benefits, flexi",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+37,LinkedIn (Kaggle dataset),Intermountain Health,Medical Assistant,Intermountain Health,Part-time,,18.83 - 26.81,"Job Description:
+
+A Medical assistant has accountability for providing care to patients in an ambulatory clinic setting. This will involve caring for patients with acute and chronic needs
+
+Are you int",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+38,LinkedIn (Kaggle dataset),Creative Artists Agency,Motion Picture Production - Assistant,Creative Artists Agency,Full-time,,Not specified,"Creative Artists Agency (CAA) is the leading entertainment and sports agency, with global expertise in filmed and live entertainment, digital media, publishing, sponsorship sales and endorsements, med",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+39,LinkedIn (Kaggle dataset),Liberty Healthcare and Rehabilitation Services,CERTIFIED NURSING ASSISTANT - OAK FOREST HEALTH & REHAB CENTER,Liberty Healthcare and Rehabilitation Services,Part-time,,Not specified,"Liberty Cares
+
+With Compassion
+
+At Liberty Healthcare and Rehabilitation Services, we promote a challenging, but rewarding opportunity in a caring environment. 
+
+We are currently seeking an experience",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+40,LinkedIn (Kaggle dataset),Life Care Centers of America,Certified Occupational Therapist Assistant (COTA),Life Care Centers of America,Part-time,,Not specified,"Position Details
+
+Employment Status: Part-TimeSalary: 30.00 HourlyShift: DayStatus: PRN
+
+Position Summary
+
+The COTA Certified Occupational Therapist Assistant provides direct rehab care in occupationa",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+41,LinkedIn (Kaggle dataset),Ford's Theatre Society,Executive Assistant,Ford's Theatre Society,Full-time,,65000.0 - 70000.0,"Ford’s Theatre Society is hiring an Executive Assistant to the Director of Ford’s Theatre Society. The position is full-time and based in Washington, DC.  Ford’s Theatre Society values and is committe",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+42,LinkedIn (Kaggle dataset),AMN Healthcare,Cardiothoracic Surgery Physician Assistant ,AMN Healthcare,Full-time,,Not specified,"A locum tenens position is available for a Cardiothoracic Surgery Nurse Practitioner or Physician Assistant in Oregon! 
+The provider must have experience in Epicardial Wires, Chest Tubes, and Vein Har",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+43,LinkedIn (Kaggle dataset),"Chico's FAS, Inc.",Assistant Store Manager - Chico's,"Chico's FAS, Inc.",Full-time,,Not specified,"Join our chic team, dedicated to a styling and social experience that inspires women to express their individuality.
+
+Position Objective
+
+The Assistant Store Manager is responsible for supporting the ",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+44,LinkedIn (Kaggle dataset),Dollar Tree Stores,OPERATIONS ASSISTANT MANAGER,Dollar Tree Stores,Full-time,,Not specified,"Store Dollar Tree
+
+Work where you love to shop! Dollar Tree is hiring in your neighborhood. Avoid long commutes and set your own course to success by applying today.
+
+We offer generous benefits, flexi",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+45,LinkedIn (Kaggle dataset),Life Care Centers of America,Licensed Physical Therapist Assistant,Life Care Centers of America,Part-time,,Not specified,"Position Details
+
+Salary: 29.00 - 32.00 HourlyShift: DayStatus: PRN
+
+ We have Excellent Benefits Health, Vision ,Dental and PTO. 
+
+All part-time and full-time associates will earn PTO from their date ",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+46,LinkedIn (Kaggle dataset),10 Fitness,Assistant Manager,10 Fitness,Full-time,,Not specified,"The Assistant Managers of 10 Fitness are expected to uphold and deliver the 10 Fitness member experience via being honest and committed individuals who are moldable, patient, and resilient. They shoul",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+47,LinkedIn (Kaggle dataset),Eurofins PSS Insourcing Solutions,Field Engineer (Travel/Remote),Eurofins PSS Insourcing Solutions,Full-time,,Not specified,"Company Description
+
+Eurofins Scientific is an international life sciences company, providing a unique range of analytical testing services to clients across multiple industries, to make life and our ",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+48,LinkedIn (Kaggle dataset),Advantis Global is becoming INSPYR Solutions,Research Assistant,Advantis Global is becoming INSPYR Solutions,Contract,,Not specified,"About This Featured Opportunity
+
+The XXX Research Team brings together a world-class team of researchers, developers, and engineers to create the future of virtual and augmented reality, which togethe",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+49,LinkedIn (Kaggle dataset),Carters Inc.,Sales Manager (Part Time) - 24H210,Carters Inc.,Part-time,,Not specified,"QUESTIONNAIRE-3-52
+
+1321
+
+Employee Type
+
+Regular
+
+If you are a CURRENT Carter’s employee, you MUST apply through the Internal Career Link within the My Career & Performance app in Workday. Do not appl",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+50,LinkedIn (Kaggle dataset),"Lowe's Companies, Inc.",Retail Sales – Part Time,"Lowe's Companies, Inc.",Part-time,,Not specified,"We are happy you have taken time out of your day to check out this Retail Sales Associate opportunity with Lowe's. Do any of the following statements match your current goals?
+
+I'm at least 18 years o",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+51,LinkedIn (Kaggle dataset),DXC Technology,Remote Insurance Call Center Support,DXC Technology,Full-time,,31800.0 - 52000.0,"Job Description
+
+DXC Technology (NYSE: DXC) helps global companies run their mission critical systems and operations while modernizing IT, optimizing data architectures, and ensuring security and scal",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+52,LinkedIn (Kaggle dataset),Goodwill of Central and Northern Arizona,Legal Compliance Assistant,Goodwill of Central and Northern Arizona,Full-time,,Not specified,"2626 W Beryl Ave Phoenix Arizona, 85021,
+
+Position Description:
+
+Provides senior level administrative support directly to the EVP, Chief Administrative Officer (CAO) and Chief Legal Officer (CLO), as ",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+53,LinkedIn (Kaggle dataset),Liberty Healthcare and Rehabilitation Services,CERTIFIED NURSING ASSISTANT - WOODLANDS NURSING AND REHABILITATION CENTER,Liberty Healthcare and Rehabilitation Services,Full-time,,Not specified,"
+Liberty Cares
+With Compassion
+At Liberty Healthcare and Rehabilitation Services, we promote a challenging, but rewarding opportunity in a caring environment. 
+We are currently seeking an experienced:",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+54,LinkedIn (Kaggle dataset),Dollar Tree Stores,OPERATIONS ASSISTANT MANAGER,Dollar Tree Stores,Full-time,,Not specified,"Store Dollar Tree
+
+Work where you love to shop! Dollar Tree is hiring in your neighborhood. Avoid long commutes and set your own course to success by applying today.
+
+We offer generous benefits, flexi",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+55,LinkedIn (Kaggle dataset),Optima Bio Supply Ltd,DATA ENTRY,Optima Bio Supply Ltd,Full-time,,Not specified,Company Overview: Optima Bio Supply Ltd is a forward-thinking and innovative company seeking a motivated and detail-oriented individual to join our team as a Remote Data Entry Clerk. If you thrive in ,General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+56,LinkedIn (Kaggle dataset),Oakland Heritage Alliance,Administrative Assistant/Engagement Coordinator,Oakland Heritage Alliance,Part-time,,Not specified,"Oakland Heritage Alliance (OHA) is a non-profit membership organization with over 400 members and 40+ years of advocacy for the protection, preservation, and revitalization of Oakland’s architectural,",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+57,LinkedIn (Kaggle dataset),Endeavor Health,Administrative Assistant III,Endeavor Health,Full-time,,Not specified,"Position Highlights
+
+Position: Administrative Assistant IIILocation: Primarily at Evanston Hospital, light travel to other hospitals for meetings/eventsFull Time/Part Time: Full TimeHours: 8:00am – 4:",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+58,LinkedIn (Kaggle dataset),SalesLight,Ghostwriter (Remote),SalesLight,Part-time,,Not specified,"SalesLight, based in Seattle, stands as a beacon for sales teams and individuals aspiring to illuminate their sales potential. Through our personalized mentorship and innovative coaching programs, we ",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+59,LinkedIn (Kaggle dataset),Judge Consulting Group,Executive Assistant,Judge Consulting Group,Full-time,,Not specified,The ideal candidate will provide top-level assistance for high level executives. They should be well-organized and be comfortable scheduling meetings and responding to emails on the executive's behalf,General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+60,LinkedIn (Kaggle dataset),Benevis,Dental Assistant - Part Time,Benevis,Part-time,,14.0 - 20.0,"Overview
+
+Dental Assistant - Part Time - Sunnybrook Dentistry and Braces Hattiesburg, MS
+
+Work for a company that is truly making the world a happier place, one smile at a time! At Benevis, we create ",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+61,LinkedIn (Kaggle dataset),Manticore Games Inc.,Senior/Principal Software Engineer - Gameplay (Remote),Manticore Games Inc.,Full-time,,Not specified,"Manticore Games® is building a new immersive, open world sandbox life-simulation Massively Multiplayer Online (MMO) game leveraging the power of its UGC platform, Core. Manticore launched the Core pla",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+62,LinkedIn (Kaggle dataset),,"Executive assistant, flex time offsite/local",,Part-time,,Not specified,"Our office exudes a focused, collaborative energy where rapport and experience drive results. We operate in a professional yet welcoming environment: at the hub of diverse teams of specialists working",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+63,LinkedIn (Kaggle dataset),HCA Healthcare,Patient Support Service Representative Part Time,HCA Healthcare,Part-time,,Not specified,"Description
+
+Introduction
+
+Do you want to join an organization that invests in you as a Patient Support Service Representative Part Time? At Lakeview Hospital, you come first. HCA Healthcare has commi",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+64,LinkedIn (Kaggle dataset),Famous Footwear,Part-Time Assistant Manager - Famous Footwear,Famous Footwear,Part-time,,Not specified,"Overview
+
+At Famous Footwear, we believe everyone deserves to feel a little famous. To us, famous isn’t about standing out in the crowd. It’s about feeling good where you stand right now. Famous Footw",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+65,LinkedIn (Kaggle dataset),Ascot Group,"Underwriting Assistant, Captive Solutions",Ascot Group,Full-time,,70000.0 - 85000.0,"Job Description
+
+This is an opportunity to join Ascot Group - one of the world’s preeminent specialty risk underwriting organizations.
+
+Designed as a modern-era company operating through an ecosystem ",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+66,LinkedIn (Kaggle dataset),La Petite Academy,VPK Assistant Teacher,La Petite Academy,Full-time,,Not specified,"Join a strong community where all we do is care-for the children and families we serve every day, as well as for our dedicated team members. Our people are our best asset. We listen and we know what y",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+67,LinkedIn (Kaggle dataset),Texas Health Resources,"Certified Medical Assistant – Family Care - Full Time, Days",Texas Health Resources,Full-time,,Not specified,"24001754
+
+Certified Medical Assistant (CMA) – Family Care
+
+Fast-paced, high-volume clinic looking for a top skilled Certified Medical Assistant
+
+Good work life balance
+
+Here’s What You Need
+
+High Scho",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+68,LinkedIn (Kaggle dataset),The Job Network,Director of Sales Operations (San Francisco or Remote US),The Job Network,Full-time,,Not specified,PayZen is on a mission to bring financial health to healthcare. Our products improve both access and affordability for patients and cash flow & administrative complexity for medical providers. We are ,General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+69,LinkedIn (Kaggle dataset),Shady Grove Fertility,Medical Assistant/Phlebotomist,Shady Grove Fertility,Full-time,,Not specified,"Enjoy what you do while contributing to a company that makes a difference in people’s lives. Shady Grove Fertility, one of the premier fertility centers in the United States, continually seeks experie",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+70,LinkedIn (Kaggle dataset),IHG Hotels & Resorts,Part Time - Front Desk Agent - ZYAPB,IHG Hotels & Resorts,Part-time,,Not specified,"The moment a guest steps into one of our hotels, they walk into a genuinely memorable experience. As a Front Desk Agent, you’ll not only be the person they rely on to handle transactions, offer local ",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+71,LinkedIn (Kaggle dataset),Spirit Halloween,Assistant Store Manager - Spirit,Spirit Halloween,Temporary,,Not specified,"Job Description
+
+Hourly rate ranges from $17.19 - $17.89 per hour and is dependent upon qualifications and experience.
+
+Brand - Spirit Halloween
+
+The Assistant Store Manager supports the Store Manager",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+72,LinkedIn (Kaggle dataset),"Cafua Management Company, a Dunkin Franchisee ",Assistant Manager,"Cafua Management Company, a Dunkin Franchisee ",Full-time,,Not specified,The Assistant Restaurant Manager supports the Restaurant Manager in their efforts to develop a team of dedicated people delivering great and friendly guest experiences and profitable top line sales. T,General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+73,LinkedIn (Kaggle dataset),Allstate,"Property Adjuster - Field Estimating - Elyria, OH (Remote)",Allstate,Full-time,,Not specified,"The world isn’t standing still, and neither is Allstate. We’re moving quickly, looking across our businesses and brands and taking bold steps to better serve customers’ evolving needs. That’s why now ",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+74,LinkedIn (Kaggle dataset),American Red Cross,HR Shared Services Administrative Assistant,American Red Cross,Full-time,,19.0 - 22.0,"Please use Google Chrome or Mozilla Firefox when accessing Candidate Home.
+
+By joining the American Red Cross you will touch millions of lives every year and experience the greatness of the human spir",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+75,LinkedIn (Kaggle dataset),Capital One,"Senior Manager, Generative AI Product Engineering - People Leader - (Remote Eligible)",Capital One,Full-time,,Not specified,"Center 3 (19075), United States of America, McLean, VirginiaSenior Manager, Generative AI Product Engineering - People Leader - (Remote Eligible)
+
+Our mission at Capital One is to create trustworthy, ",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+76,LinkedIn (Kaggle dataset),SCOUT Solutions,Senior .NET Developer (100% Remote),SCOUT Solutions,Full-time,,Not specified,"Senior .NET Developer
+ Location:  Remote, US - Eligible hybrid and remote candidates must reside in one of the following states DC, FL, ID, IN, MD, MI, MN, NC, NJ, OH, PA, SC, TN, TX, VA, WV, IL, and ",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+77,LinkedIn (Kaggle dataset),Vaco,Assistant Underwriter,Vaco,Full-time,,28.0 - 30.0,"Client: Well-Known Insurance Organization
+ Role: Assistant Underwriter (Temporary to Permanent)
+ Pay Rate: $28/hr-$30/hr
+
+Location: Downtown, Manhattan - *Onsite 5 days a week*
+ Hours: 8:00am - 4:00pm",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+78,LinkedIn (Kaggle dataset),Talentify.io,Remote Call Center Sales Agent,Talentify.io,Full-time,,Not specified,"Industry: Insurance Company
+
+Why Consider This Job Opportunity
+
+ Competitive hourly pay rate Eligibility for weekly, monthly, and quarterly incentive pay Pay for continuing education and paid training",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+79,LinkedIn (Kaggle dataset),NeuroPsychiatric Hospitals,Corporate Accountant Assistant,NeuroPsychiatric Hospitals,Full-time,,Not specified,"Corporate Accountant Assistant (AP/AR) | NeuroPsychiatric Hospitals | South Bend, IN
+
+HEALING THE BODY AND MIND Founded fifteen (15) years ago, Neuropsychiatric Hospitals is the largest hospital syste",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+80,LinkedIn (Kaggle dataset),University of Michigan Health-West,MA - Medical Assistant - Wayland * Days - 40hrs/wk,University of Michigan Health-West,Full-time,,Not specified,"Requisition #: req7737
+
+Shift: Days
+
+FTE status: 1
+
+On-call: No
+
+Weekends: No
+
+General Summary
+
+Under the direction of the Office Manager, the Medical Assistant performs administrative and clinical du",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+81,LinkedIn (Kaggle dataset),Belk,Store Fulfillment Associate - Part Time,Belk,Part-time,,Not specified,The Store Fulfillment Associate is responsible for processing customer orders in a timely and accurate manner. The Store Fulfillment Associate plays a key role in executing our “Relentless Customer Ca,General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+82,LinkedIn (Kaggle dataset),Elevate Digital,Microsoft Consulting Part-time Project Manager--REMOTE! ,Elevate Digital,Contract,,55.0 - 60.0,"This is a PART-TIME position to start--20 hours per weekNO third party Vendors for C2C available!!
+TOP SKILLS:Proven experience managing projects related to Microsoft technology solutions.Project Mana",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+83,LinkedIn (Kaggle dataset),WellSpan Health,Nursing Assistant - Same Day Surgery,WellSpan Health,Full-time,,Not specified,"Job Description
+
+General Summary
+
+Provides clinical support services to patient care staff by performing a variety of duties related to patient care. Takes patient vital signs, assists patients with a",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+84,LinkedIn (Kaggle dataset),Family Dollar,ASSISTANT STORE MANAGER,Family Dollar,Full-time,,Not specified,"Store Family Dollar
+
+General Summary:
+
+Work where you love to shop! Family Dollar is hiring in your neighborhood. Avoid long commutes and set your own course to success by applying today.
+
+We offer ge",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+85,LinkedIn (Kaggle dataset),McLeod Health,Physician Assistant/Family Medicine Marion,McLeod Health,Full-time,,Not specified,"Job Description
+
+McLeod Family Medicine Marion is seeking a Physician Assistant!
+
+Qualifications/Training:
+
+Minimum of a master’s degree of science in Physician Assistant studies required.
+
+
+Licenses/",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+86,LinkedIn (Kaggle dataset),Clark County School District,Assistant Principal - Keller MS,Clark County School District,Full-time,,Not specified,"The following school-based administrative vacancy is available to Assistant Principals transferring laterally, and those notified of their acceptance into the Aspiring School Administrative Pool.
+
+Dua",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+87,LinkedIn (Kaggle dataset),American Cancer Society,Sr. Compensation Analyst - Remote,American Cancer Society,Full-time,,61000.0 - 90000.0,"At the American Cancer Society, we're leading the fight for a world without cancer. Our employees and 1.5 million volunteers are raising the bar every single day. We actively seek candidates from dive",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+88,LinkedIn (Kaggle dataset),Hibbett,Assistant Manager,Hibbett,Full-time,,Not specified,"00387 Birmingham, AL
+
+LE_301 Hibbett Retail, Inc.
+
+Job Title: Assistant Manager
+
+Department: Operations
+
+FLSA Status: Non-Exempt
+
+Reports To: Store Manager
+
+Summary
+
+The Assistant Manager is responsib",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+89,LinkedIn (Kaggle dataset),NYC Health + Hospitals,"Desktop Support Technician (Assistant Systems Analyst (EDP)), Enterprise Infrastructure",NYC Health + Hospitals,Full-time,,Not specified,"About NYC Health + Hospitals 
+
+Empower Every New Yorker — Without Exception — to Live the Healthiest Life Possible
+
+NYC Health + Hospitals is the largest public health care system in the United States",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+90,LinkedIn (Kaggle dataset),Family Dollar,ASSISTANT STORE MANAGER,Family Dollar,Full-time,,Not specified,"Store Family Dollar
+
+General Summary:
+
+Work where you love to shop! Family Dollar is hiring in your neighborhood. Avoid long commutes and set your own course to success by applying today.
+
+We offer ge",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+91,LinkedIn (Kaggle dataset),McLaren Health Care,Medical Assistant - Neurology,McLaren Health Care,Full-time,,Not specified,"$2,000 Sign-On Bonus for eligible new hires
+
+$18.41/hour starting wage for non-certified Medical Assistants
+
+$19.43/hour starting wage for Medical Assistants Certified through AAMA or AMT
+
+Under gener",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+92,LinkedIn (Kaggle dataset),Agemark Senior Living,Front Desk-Part Time,Agemark Senior Living,Part-time,,Not specified,"Sage Mountain in Thousand Oaks, CA, an Agemark Senior Living Community is hiring for a Front Desk Part-Time position! For the SIX consecutive year, we are certified #17 in Fortune Best Workplaces for ",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+93,LinkedIn (Kaggle dataset),QinetiQ US,Executive Assistant (EA) (TS/SCI) DODF3,QinetiQ US,Full-time,,Not specified,"We are a world-class team of professionals who deliver next generation technology and products in robotic and autonomous platforms, ground, soldier, and maritime systems in 50+ locations world-wide. M",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+94,LinkedIn (Kaggle dataset),NYS Office of Information Technology Services,"Student Assistant Internship (Workplace Services), Ref #7553",NYS Office of Information Technology Services,Full-time,,21.0 - 24.0,"Minimum Qualifications
+
+ Must be a US citizen or foreign national eligible to work in the United States Must be 18 years of age or older Must be currently attending a New York State college, universit",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+95,LinkedIn (Kaggle dataset),New York State Department of Health,"Senior Attorney / Assistant Attorney 1,2, and 3 Traineeships/ NY HELPS",New York State Department of Health,Full-time,,65001.0 - 117875.0,"Minimum Qualifications
+
+ Minimum Qualifications 
+
+Transfers: One year of permanent competitive or 55b/c service in this title or in a title eligible for 70.1 or 52.6 transfer.
+
+Open to the Public: Thi",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+96,LinkedIn (Kaggle dataset),Talentify.io,Senior Product Owner (Remote),Talentify.io,Full-time,,Not specified,"Employer Industry: Financial Services
+
+Why Consider This Job Opportunity
+
+ Opportunity for career advancement and growth within the organization Competitive salary and benefits package Remote work opp",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+97,LinkedIn (Kaggle dataset),A Hiring Company,"Assistant Director, Graduate Admission",A Hiring Company,Full-time,,Not specified,"
+Job Description SummaryAs part of a cohesive and collaborative Graduate Admissions team, this position effectively deploys strategies to attract and enroll highly qualified domestic, international an",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+98,LinkedIn (Kaggle dataset),Ochsner Health,Physical Therapist Assistant (Outpatient) - Therapy & Wellness - LaPlace,Ochsner Health,Full-time,,Not specified,"We've made a lot of progress since opening the doors in 1942, but one thing has never changed - our commitment to serve, heal, lead, educate, and innovate. We believe that every award earned, every re",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+99,LinkedIn (Kaggle dataset),Liberty Healthcare and Rehabilitation Services,CERTIFIED NURSING ASSISTANT - SOUTHWOOD,Liberty Healthcare and Rehabilitation Services,Full-time,,Not specified,"
+Liberty Cares
+With Compassion
+At Liberty Healthcare and Rehabilitation Services, we promote a challenging, but rewarding opportunity in a caring environment. 
+We are currently seeking an experienced:",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+100,LinkedIn (Kaggle dataset),Liberty Healthcare and Rehabilitation Services,CERTIFIED NURSING ASSISTANT - MARY GRAN,Liberty Healthcare and Rehabilitation Services,Full-time,,Not specified,"
+Liberty Cares
+With Compassion
+At Liberty Healthcare and Rehabilitation Services, we promote a challenging, but rewarding opportunity in a caring environment. 
+We are currently seeking an experienced:",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+101,LinkedIn (Kaggle dataset),,Personal Assistant,,Part-time,,Not specified,"Company DescriptionJAMES THOMAS & SON IMPORTS LTD, we have over 10 years of experience in the Customs Broker industry. Our team of experts is highly knowledgeable and dedicated to providing exceptiona",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+102,LinkedIn (Kaggle dataset),MercyOne,Lab Assistant Pleasant Hill Clinic,MercyOne,Full-time,,Not specified,"Employment Type
+
+Full time
+
+Shift
+
+Description:
+
+Perform lab-testing services to patients of a variety of ages in a defined outpatient clinic setting.
+
+Responsibilities
+
+Follows established procedures",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+103,LinkedIn (Kaggle dataset),Sharp HealthCare,Nursing Assistant- Float Pool-Sharp Memorial Hospital-Night Shift-Part time,Sharp HealthCare,Part-time,,Not specified,"Hours
+
+Shift Start Time:
+
+7 PM
+
+Shift End Time:
+
+7:30 AM
+
+Additional Shift Information:
+
+Weekend Requirements:
+
+As Needed
+
+On-Call Required:
+
+No
+
+Hourly Pay Range (Minimum - Midpoint - Maximum):
+
+$20.",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+104,LinkedIn (Kaggle dataset),Whole Foods Market,In-Store Shopper - Part Time,Whole Foods Market,Part-time,,Not specified,"At Whole Foods Market, we’re committed to providing record-setting grocery delivery services to our Prime Now customers. This is a fast-growing program and candidates who are passionate about our qual",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+105,LinkedIn (Kaggle dataset),Notre Dame Health Care Center Inc.,CNA - Full and Part Time Openings,Notre Dame Health Care Center Inc.,Full-time,,Not specified,"Description:Certified Nurse Assistants (C.N.A.)Full & Part-Time OpeningsStudent Loan Repayment and Tuition Reimbursement up to $5,250 /year; federal tax-exemptNon-Profit FacilityNew Wage ScaleExcellen",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+106,LinkedIn (Kaggle dataset),Life Care Centers of America,"Certified Nursing Assistant (CNA) $2,000 Sign-on Bonus",Life Care Centers of America,Full-time,,Not specified,"Position Details
+
+Shift: 7 a.m. - 3 p.m. Status: Full-Time
+
+Live the Mission
+
+$2,000 Sign On Bonus
+
+Come and grow with us! We are affiliated with Life Care Centers of America, which is a privately own",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+107,LinkedIn (Kaggle dataset),"Lowe's Companies, Inc.",Warehouse Part Time Overnight,"Lowe's Companies, Inc.",Part-time,,14.35 - 14.6,"Life. Career. Build it Together Here.
+
+At Lowe’s, we’ve always been more than a home improvement store. For thousands of Lowe’s associates, we’re the beginning of all types of careers that help improv",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+108,LinkedIn (Kaggle dataset),Floor & Decor,Assistant Department Manager (Wood),Floor & Decor,Full-time,,Not specified,"Purpose
+
+This position is responsible for training and developing Product Sales Specialists and ensuring that customers have a positive shopping experience by receiving exceptional customer service an",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+109,LinkedIn (Kaggle dataset),Merrick & Company,Assistant Project Manager,Merrick & Company,Full-time,,100000.0 - 125000.0,"Overview
+
+The Assistant Project Manager must be capable of assisting with directing and managing a team of engineers & technicians on Land Development projects. This position requires the ability to p",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+110,LinkedIn (Kaggle dataset),Brand Building Agency,Event Assistant,Brand Building Agency,Full-time,,Not specified,"Job Title: Promotional Event AssistantCompany: BBA Philly - Brand Building AgencyLocation: Philadelphia, PAJob Type: Full-Time (on-site only)
+About Us:Welcome to The Brand Building Agency (BBA Philly)",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+111,LinkedIn (Kaggle dataset),QinetiQ US,Executive Assistant (EA) (TS/SCI) DODF4,QinetiQ US,Full-time,,Not specified,"We are a world-class team of professionals who deliver next generation technology and products in robotic and autonomous platforms, ground, soldier, and maritime systems in 50+ locations world-wide. M",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+112,LinkedIn (Kaggle dataset),Five Below,Sales Lead Part Time,Five Below,Part-time,,Not specified,"At Five Below our growth is a result of the people who embrace our purpose: We know life is way better when you are free to Let Go & Have Fun in an amazing experience, filled with unlimited possibilit",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+113,LinkedIn (Kaggle dataset),RightWorks,Legal Administrative Assistant - Litigation - 1927959,RightWorks,Full-time,,Not specified,"Our client on Long Island is seeking a Litigation Legal Assistant with 5+ years of law firm experience.
+
+Hybrid Hours:  Monday-Friday, 9am-5pm Minimum 3 days a week in office 2 days a week remotely
+
+R",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+114,LinkedIn (Kaggle dataset),HeartShare Human Services of New York,Assistant Residence Manager,HeartShare Human Services of New York,Full-time,,Not specified,"Job Details
+
+Job Location
+
+Midwood Residence, 1314 E. 29th St, Brooklyn, NY, 11210 - Brooklyn, NY
+
+Position Type
+
+Full-Time
+
+Education Level
+
+High School Diploma or Equivalent
+
+Salary Range
+
+$44,000.0",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
+115,LinkedIn (Kaggle dataset),AbbVie,Senior Statistical Analyst (Remote),AbbVie,Full-time,,Not specified,"Company Description
+
+AbbVie's mission is to discover and deliver innovative medicines and solutions that solve serious health issues today and address the medical challenges of tomorrow. We strive to ",General applicants,LinkedIn application portal,,0,No,Real,"Sourced from Kaggle LinkedIn Job Postings dataset (arshkon, 2023-2024)",23-09-2026,kaggle_linkedin_job_postings.csv
