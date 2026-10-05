@@ -232,10 +232,10 @@ data/processed/*
 *.npz
 new.py
 
-# Streamlit app (kept local until ready)
-app/
+# Streamlit app configuration
+.streamlit/secrets.toml
 
-# Trained model artifacts (kept local until ready)
+# Trained model artifacts (large binary files excluded; structure preserved via .gitkeep)
 models/*.joblib
 !models/.gitkeep
 
