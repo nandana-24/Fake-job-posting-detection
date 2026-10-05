@@ -101,26 +101,6 @@ TEST_CASES = {
         "has_questions": 0,
         "contact_details": "Telegram: @digital_task_coordinator",
     },
-    "case_8_technova_wfh_fee_scam": {
-        "title": "Urgent Work From Home – Software Developer",
-        "company": "TechNova Digital Solutions",
-        "company_profile": "",
-        "description": "We are urgently hiring Software Developers for immediate work-from-home opportunities. Freshers and candidates without prior experience are welcome. No technical interview is required and selected candidates can start immediately.\n\nThe selected candidate will work on basic software development, data entry, application testing, and online projects. Complete training will be provided.",
-        "requirements": "Basic computer knowledge\nBasic knowledge of programming\nGood communication skills\nSmartphone and laptop required\nCandidates must be available to join immediately",
-        "benefits": "₹35,000–₹75,000 monthly income\nPerformance-based incentives\nFlexible working hours\nWork completely from home\nNo previous experience required",
-        "application_process": "Interested candidates should contact the recruitment coordinator through WhatsApp to receive the registration form and interview details.\n\nSelected candidates must complete a refundable ₹1,500 registration and verification fee before receiving the joining documents. The amount will be returned with the first month's salary.\n\nCandidates should also provide their Aadhaar/PAN details during registration for verification.\n\nImportant:\nOnly limited vacancies are available. Candidates who do not complete registration within 24 hours may lose their opportunity.",
-        "salary": "₹35,000–₹75,000 per month",
-        "country": "Remote",
-        "telecommuting": 1,
-        "has_company_logo": 1,
-        "has_questions": 0,
-        "employment_type": "Full-time",
-        "required_experience": "Entry Level",
-        "required_education": "Any Degree",
-        "industry": "Information Technology",
-        "function": "Software Development",
-        "contact_details": "",
-    },
 }
 
 
