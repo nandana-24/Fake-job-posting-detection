@@ -214,6 +214,13 @@ with st.form("scam_analyzer_form"):
             height=80
         )
 
+    application_process = st.text_area(
+        "Application Process / Selection Procedure",
+        value=st.session_state.get("auto_application_process", ""),
+        height=90,
+        placeholder="e.g. Contact HR coordinator via WhatsApp, pay refundable ₹1,500 registration/verification fee, submit Aadhaar/PAN, apply within 24 hours, etc."
+    )
+
     # -------------------------------------------------------------
     # 3. COMPENSATION & LOGISTICS
     # -------------------------------------------------------------
@@ -289,7 +296,7 @@ with st.form("scam_analyzer_form"):
 if submitted:
     # Check if meaningful content was provided
     has_content = any(
-        field.strip() for field in [title, company, description, requirements, benefits, contact_details]
+        field.strip() for field in [title, company, description, requirements, benefits, application_process, contact_details]
     )
 
     if not has_content:
@@ -302,7 +309,7 @@ if submitted:
         )
     else:
         # 1. Pre-flight text quality / brevity check
-        core_text = " ".join(filter(None, [title, company, description, requirements, benefits]))
+        core_text = " ".join(filter(None, [title, company, description, requirements, benefits, application_process]))
         word_count = len([w for w in core_text.strip().split() if len(w) > 1])
 
         st.divider()
@@ -321,6 +328,7 @@ if submitted:
             "title": title.strip(),
             "company_profile": company_profile.strip() if company_profile.strip() else "",
             "description": description.strip(),
+            "application_process": application_process.strip(),
             "requirements": requirements.strip(),
             "benefits": benefits.strip(),
             "salary": salary.strip(),
@@ -343,13 +351,18 @@ if submitted:
         # B. Heuristic Threat & Domain Checks
         raw_text = " ".join(filter(None, [
             title, company, account_name, contact_details,
-            company_profile, description, requirements, benefits, salary
+            company_profile, description, application_process, requirements, benefits, salary
         ]))
 
         context_data = {
             "company": company,
             "title": title,
-            "description": description
+            "description": description,
+            "application_process": application_process,
+            "requirements": requirements,
+            "benefits": benefits,
+            "contact_details": contact_details,
+            "salary": salary,
         }
         flags = detect_red_flags(raw_text, context=context_data)
 
@@ -360,15 +373,20 @@ if submitted:
         # 4. Composite Risk Fusion (Cybersecurity Safety Override)
         high_threats = [f for f in flags if f.get("severity") == "High"]
         medium_threats = [f for f in flags if f.get("severity") == "Medium"]
+        app_high_threats = [f for f in high_threats if "Application Process" in f.get("field", "")]
 
         composite_proba = ml_proba
         is_override_active = False
         override_reason = ""
 
-        if len(high_threats) >= 2:
-            composite_proba = max(ml_proba, 0.85)
+        if len(high_threats) >= 2 or app_high_threats:
+            composite_proba = max(ml_proba, 0.90 if app_high_threats else 0.85)
             is_override_active = (composite_proba > ml_proba)
-            override_reason = f"Triggered by {len(high_threats)} High-Severity Threat Indicators ({high_threats[0]['indicator']}, {high_threats[1]['indicator']})."
+            if app_high_threats:
+                threat_names = ", ".join([f"'{t['indicator']}'" for t in app_high_threats[:2]])
+                override_reason = f"Critical threat indicator(s) detected in Application Process ({threat_names})."
+            else:
+                override_reason = f"Triggered by {len(high_threats)} High-Severity Threat Indicators ({high_threats[0]['indicator']}, {high_threats[1]['indicator']})."
         elif len(high_threats) == 1:
             composite_proba = max(ml_proba, 0.75)
             is_override_active = (composite_proba > ml_proba)
@@ -446,7 +464,8 @@ if submitted:
         if flags:
             for f in flags:
                 sev_color = {"High": "🔴", "Medium": "🟠", "Low": "🟡"}.get(f["severity"], "⚪")
-                st.write(f"{sev_color} **{f['indicator']}** ({f['severity']})")
+                field_badge = f" — 📍 *Detected in: {f['field']}*" if f.get("field") else ""
+                st.write(f"{sev_color} **{f['indicator']}** ({f['severity']}){field_badge}")
                 st.caption(f"{f['description']}")
                 st.code(f["evidence"], language=None)
         else:

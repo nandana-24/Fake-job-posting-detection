@@ -101,6 +101,26 @@ TEST_CASES = {
         "has_questions": 0,
         "contact_details": "Telegram: @digital_task_coordinator",
     },
+    "case_8_technova_wfh_fee_scam": {
+        "title": "Urgent Work From Home – Software Developer",
+        "company": "TechNova Digital Solutions",
+        "company_profile": "",
+        "description": "We are urgently hiring Software Developers for immediate work-from-home opportunities. Freshers and candidates without prior experience are welcome. No technical interview is required and selected candidates can start immediately.\n\nThe selected candidate will work on basic software development, data entry, application testing, and online projects. Complete training will be provided.",
+        "requirements": "Basic computer knowledge\nBasic knowledge of programming\nGood communication skills\nSmartphone and laptop required\nCandidates must be available to join immediately",
+        "benefits": "₹35,000–₹75,000 monthly income\nPerformance-based incentives\nFlexible working hours\nWork completely from home\nNo previous experience required",
+        "application_process": "Interested candidates should contact the recruitment coordinator through WhatsApp to receive the registration form and interview details.\n\nSelected candidates must complete a refundable ₹1,500 registration and verification fee before receiving the joining documents. The amount will be returned with the first month's salary.\n\nCandidates should also provide their Aadhaar/PAN details during registration for verification.\n\nImportant:\nOnly limited vacancies are available. Candidates who do not complete registration within 24 hours may lose their opportunity.",
+        "salary": "₹35,000–₹75,000 per month",
+        "country": "Remote",
+        "telecommuting": 1,
+        "has_company_logo": 1,
+        "has_questions": 0,
+        "employment_type": "Full-time",
+        "required_experience": "Entry Level",
+        "required_education": "Any Degree",
+        "industry": "Information Technology",
+        "function": "Software Development",
+        "contact_details": "",
+    },
 }
 
 
@@ -114,11 +134,12 @@ def run_test(name, user_input):
     raw_text = " ".join(filter(None, [
         user_input.get("title", ""), user_input.get("company", ""),
         user_input.get("company_profile", ""), user_input.get("description", ""),
+        user_input.get("application_process", ""),
         user_input.get("requirements", ""), user_input.get("benefits", ""),
-        user_input.get("contact_details", "")
+        user_input.get("salary", ""), user_input.get("contact_details", "")
     ]))
 
-    flags = detect_red_flags(raw_text, context={"company": user_input.get("company", "")})
+    flags = detect_red_flags(raw_text, context=user_input)
 
     contact = user_input.get("contact_details", "")
     if contact:
@@ -128,12 +149,13 @@ def run_test(name, user_input):
     # Composite Risk Calculation
     high_threats = [f for f in flags if f.get("severity") == "High"]
     medium_threats = [f for f in flags if f.get("severity") == "Medium"]
+    app_high_threats = [f for f in high_threats if "Application Process" in f.get("field", "")]
 
     composite_proba = ml_proba
     is_override = False
 
-    if len(high_threats) >= 2:
-        composite_proba = max(ml_proba, 0.85)
+    if len(high_threats) >= 2 or app_high_threats:
+        composite_proba = max(ml_proba, 0.90 if app_high_threats else 0.85)
         is_override = composite_proba > ml_proba
     elif len(high_threats) == 1:
         composite_proba = max(ml_proba, 0.75)
@@ -153,11 +175,12 @@ def run_test(name, user_input):
     print(f"Composite Scam Risk:    {composite_proba:.1%}")
     print(f"Final Risk Label:       {composite_label}")
     if is_override:
-        print(f"[*] SECURITY OVERRIDE TRIGGERED: Escalated due to {len(high_threats)} High-Severity Threat(s)")
+        print(f"[*] SECURITY OVERRIDE TRIGGERED: Escalated due to High-Severity Threat(s) (App Process: {bool(app_high_threats)})")
 
     print(f"\nDetected Threat Indicators ({len(flags)}):")
     for f in flags:
-        print(f"  [{f['severity']}] {f['indicator']}")
+        field_info = f" [Field: {f['field']}]" if f.get("field") else ""
+        print(f"  [{f['severity']}] {f['indicator']}{field_info}")
 
     explanations, base_value = explain_posting(X_transformed, feature_names, top_n=5)
     print("\nTop SHAP Contributors:")

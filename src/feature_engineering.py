@@ -9,10 +9,15 @@ import pandas as pd
 import numpy as np
 
 FREE_EMAIL_REGEX = r"@(?:gmail|yahoo|hotmail|outlook|proton|protonmail|aol|rediffmail|zoho|mail|yandex|gmx)\.com"
-MESSAGING_REGEX = r"\b(?:whatsapp|telegram|wa\.me|t\.me)\b|contact\s+on\s+(?:whatsapp|telegram)"
-FEE_REGEX = r"(?:registration|application|training|security|processing)\s+fee|pay\s+(?:₹|rs\.?|inr|\$)?\s?\d+|deposit\s+required"
-URGENCY_REGEX = r"\b(?:urgent|urgently|immediate|immediately|hurry|limited\s+seats|only\s+today|apply\s+now)\b"
-GUARANTEE_REGEX = r"\b(?:guaranteed\s+(?:job|income|placement|salary)|100%\s+placement|direct\s+(?:selection|joining)|no\s+interview)\b"
+MESSAGING_REGEX = r"\b(?:whatsapp|telegram|wa\.me|t\.me)\b|contact\s+(?:the\s+)?(?:[\w\s]{0,20})?(?:on|through|via)\s+(?:whatsapp|telegram)"
+FEE_REGEX = (
+    r"(?:refundable\s+(?:(?:₹|rs\.?|inr|\$)?\s?\d+[\w\s]{0,25})?(?:fee|deposit|charges?))|"
+    r"(?:registration|application|training|security|processing|verification|portal|account|joining)\s+(?:(?:and|&)\s+\w+\s+)?(?:fee|charges?|deposit)|"
+    r"(?:pay|complete|deposit)\s+(?:a\s+)?(?:refundable\s+)?(?:(?:₹|rs\.?|inr|\$)?\s?\d+[\w\s]{0,25})?(?:fee|deposit|charges?)|"
+    r"pay\s+(?:₹|rs\.?|inr|\$)\s?\d+|(?:wallet\s+)?deposit\s+(?:of|required|to)|deposit\s+(?:₹|rs\.?|inr|\$)\s?\d+|prepaid\s+tasks?"
+)
+URGENCY_REGEX = r"\b(?:urgent|urgently|immediate|immediately|hurry|limited\s+(?:seats|vacancies|slots)|only\s+today|apply\s+now|within\s+\d+\s*hours?)\b"
+GUARANTEE_REGEX = r"\b(?:guaranteed\s+(?:job|income|placement|salary)|100%\s+placement|direct\s+(?:selection|joining)|no\s+(?:technical\s+)?interview)\b"
 
 ENGINEERED_FEATURE_COLS = [
     "has_free_email",
@@ -31,9 +36,9 @@ def extract_domain_features(df: pd.DataFrame) -> pd.DataFrame:
     Extracts numerical and binary domain fraud signals from text fields in the dataframe.
     Returns a DataFrame with columns defined in ENGINEERED_FEATURE_COLS.
     """
-    text_fields = ['title', 'company_profile', 'description', 'requirements', 'benefits']
-    
-    combined_text = df[text_fields[0]].fillna('').astype(str)
+    text_fields = ['title', 'company_profile', 'description', 'requirements', 'benefits', 'application_process']
+
+    combined_text = df[text_fields[0]].fillna('').astype(str) if text_fields[0] in df.columns else pd.Series('', index=df.index)
     for col in text_fields[1:]:
         if col in df.columns:
             combined_text = combined_text + " " + df[col].fillna('').astype(str)

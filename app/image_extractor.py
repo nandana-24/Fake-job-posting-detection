@@ -105,6 +105,7 @@ def extract_with_gemini_vision(images_input, mime_type: str = "image/png", api_k
         '  "account_name": "Poster handle or HR name",\n'
         '  "contact_details": "Recruiter email, WhatsApp number, Telegram handle, or phone",\n'
         '  "description": "Full job description text combined from all images",\n'
+        '  "application_process": "Application steps, how to apply, registration fee, or contact procedure",\n'
         '  "requirements": "Required qualifications, skills, or eligibility",\n'
         '  "benefits": "Benefits, perks, or daily payout details",\n'
         '  "salary": "Stated compensation or pay rate",\n'
@@ -252,6 +253,7 @@ def parse_job_text(raw_text: str) -> dict:
         "account_name": "",
         "contact_details": "",
         "description": raw_text.strip(),
+        "application_process": "",
         "requirements": "",
         "benefits": "",
         "salary": "",
@@ -375,6 +377,14 @@ def parse_job_text(raw_text: str) -> dict:
     )
     if ben_match:
         extracted["benefits"] = ben_match.group(1).strip()[:250]
+
+    # Application Process section
+    app_match = re.search(
+        r"(?:application\s+process|how\s+to\s+apply|selection\s+process|to\s+apply|registration\s+process)[\s:]+([^#\n]+(?:\n[*-•\d].+)*)",
+        raw_text, flags=re.IGNORECASE
+    )
+    if app_match:
+        extracted["application_process"] = app_match.group(1).strip()[:350]
 
     # 8. Location
     loc_match = re.search(

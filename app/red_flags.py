@@ -2,11 +2,14 @@
 red_flags.py
 Domain-specific, rule-based red-flag detector.
 Catches modern 2024-2026 cyber threat patterns:
-- Upfront fees & wallet deposits
+- Upfront fees, verification charges, & refundable deposit promises
+- Sensitive personal ID harvesting (Aadhaar, PAN, SSN) upfront
 - Task-based review/video-liking schemes
 - Cryptocurrency/USDT payments
-- Brand impersonation & messaging-app recruitment
-- Suspicious brevity & missing employer identity
+- Messaging-app (WhatsApp/Telegram) recruitment & application routing
+- Artificial urgency & deadline pressure tactics
+- Bypass selection & no-interview claims
+- Field-level attribution to pinpoint where red flags originate
 """
 
 import re
@@ -14,9 +17,32 @@ import re
 RED_FLAG_RULES = [
     {
         "indicator": "Upfront payment / deposit request",
-        "description": "Posting asks the applicant to pay money, purchase credentials, or make a wallet deposit before or during hiring.",
+        "description": "Posting asks the applicant to pay money, purchase credentials, or complete a registration/verification fee before or during hiring.",
         "severity": "High",
-        "pattern": r"(?:registration|application|training|security|processing|portal|account)\s+fee|pay\s+(?:₹|rs\.?|inr|\$)?\s?\d+|(?:wallet\s+)?deposit\s+(?:of|required|to)|deposit\s+(?:₹|rs\.?|inr|\$)?\s?\d+|prepaid\s+tasks?",
+        "pattern": (
+            r"(?:refundable\s+(?:(?:₹|rs\.?|inr|\$)?\s?\d+[\w\s]{0,25})?(?:fee|deposit|charges?))|"
+            r"(?:registration|application|training|security|processing|verification|portal|account|joining|onboarding|documentation)\s+(?:(?:and|&)\s+\w+\s+)?(?:fee|charges?|deposit)|"
+            r"(?:pay|complete|transfer|deposit)\s+(?:a\s+)?(?:refundable\s+)?(?:(?:₹|rs\.?|inr|\$)?\s?\d+[\w\s]{0,25})?(?:fee|deposit|charges?)|"
+            r"pay\s+(?:₹|rs\.?|inr|\$)\s?\d+|(?:wallet\s+)?deposit\s+(?:of|required|to)|deposit\s+(?:₹|rs\.?|inr|\$)\s?\d+|prepaid\s+tasks?"
+        ),
+    },
+    {
+        "indicator": "Fee refund / salary reimbursement promise",
+        "description": "Claims that an upfront fee or deposit is 'refundable' or will be returned with the first month's salary. Legitimate corporate employers never demand upfront payments with reimbursement promises.",
+        "severity": "High",
+        "pattern": (
+            r"(?:amount|fee|deposit|money)\s+will\s+be\s+(?:returned|refunded)|"
+            r"(?:returned|refunded)\s+with\s+(?:the\s+)?(?:first|1st)\s+(?:month['’]?s?\s+)?salary|"
+            r"refundable\s+(?:after|upon)\s+(?:joining|selection)"
+        ),
+    },
+    {
+        "indicator": "Sensitive government ID / personal document request upfront",
+        "description": "Posting asks applicants for sensitive government IDs (Aadhaar, PAN card, SSN, Passport) during initial application or registration before official onboarding. Often used for identity theft and fraudulent SIM/loan accounts.",
+        "severity": "High",
+        "pattern": (
+            r"\b(?:aadhaar|aadhar|pan\s+card|pan\s+details?|ssn|social\s+security(?:\s+number)?|passport\s+(?:copy|details?)|voter\s+id|driving\s+licen[sc]e)\b"
+        ),
     },
     {
         "indicator": "Task-based rating / video-liking scam pattern",
@@ -37,10 +63,13 @@ RED_FLAG_RULES = [
         "pattern": r"bank\s+(account|details)|ifsc|debit\s+card|credit\s+card\s+details|upi\s+pin",
     },
     {
-        "indicator": "Messaging-app-only recruitment",
-        "description": "Recruitment/contact happens only via WhatsApp/Telegram rather than a formal company channel.",
+        "indicator": "Application / contact routed via messaging app",
+        "description": "Recruitment instructions direct candidates to contact a coordinator or register via WhatsApp/Telegram rather than a formal company channel or verified portal.",
         "severity": "Medium",
-        "pattern": r"whatsapp|telegram",
+        "pattern": (
+            r"(?:contact|message|reach|send\s+resume|register|apply)\s+(?:the\s+)?(?:recruitment\s+coordinator|hr|team)?[\w\s]{0,25}(?:through|via|on)\s+(?:whatsapp|telegram)|"
+            r"\b(?:whatsapp|telegram)\b"
+        ),
     },
     {
         "indicator": "Unusually high salary claim",
@@ -79,28 +108,59 @@ RED_FLAG_RULES = [
         "pattern": r"a\s+leading\s+company|private\s+company|confidential\s+company|reputed\s+company|mnc\s+company",
     },
     {
-        "indicator": "Excessive urgency",
-        "description": "Posting pressures the applicant to act immediately.",
-        "severity": "Low",
-        "pattern": r"hiring\s+urgently|limited\s+seats|apply\s+immediately|only\s+today|hurry",
+        "indicator": "Excessive urgency & pressure tactics",
+        "description": "Posting pressures the applicant to act or register immediately under artificial deadlines (e.g. within 24 hours, limited slots).",
+        "severity": "Medium",
+        "pattern": (
+            r"hiring\s+urgently|urgently\s+hiring|limited\s+(?:seats|vacancies|slots)|"
+            r"apply\s+immediately|start\s+immediately|join\s+immediately|only\s+today|hurry|"
+            r"within\s+(?:12|24|48)\s*hours?|lose\s+(?:their|your)\s+opportunity"
+        ),
     },
     {
-        "indicator": "Suspicious 'special access' claims",
-        "description": "Claims of special/insider recruiter access or shortcut selection processes.",
+        "indicator": "Suspicious 'special access' or no-interview claims",
+        "description": "Claims of direct selection, bypassing technical interviews, or shortcut hiring processes.",
         "severity": "Medium",
-        "pattern": r"special\s+access|prescreen(ed|ing)|direct\s+selection|no\s+interview\s+needed|direct\s+joining",
+        "pattern": (
+            r"special\s+access|prescreen(?:ed|ing)|direct\s+selection|"
+            r"no\s+(?:technical\s+)?interview\s*(?:needed|required|is\s+required)?|"
+            r"without\s+(?:any\s+)?interview|direct\s+(?:joining|hiring|appointment)"
+        ),
     },
 ]
+
+
+def _attribute_source_fields(pattern: str, context: dict) -> list:
+    """Identify which input field(s) contain the evidence matching a given pattern."""
+    if not context:
+        return []
+
+    field_labels = [
+        ("application_process", "Application Process"),
+        ("description", "Job Description"),
+        ("requirements", "Requirements"),
+        ("benefits", "Benefits"),
+        ("title", "Job Title"),
+        ("company", "Company"),
+        ("contact_details", "Contact Details"),
+        ("salary", "Salary"),
+    ]
+    matched = []
+    for key, label in field_labels:
+        val = str(context.get(key, "") or "").strip()
+        if val and re.search(pattern, val, flags=re.IGNORECASE):
+            matched.append(label)
+    return matched
 
 
 def detect_red_flags(raw_text: str, context: dict = None):
     """
     raw_text: the full, human-readable posting text (title + description +
-    requirements + benefits + contact info etc, concatenated).
-    context: optional dictionary with specific form fields (e.g. company, title, description).
+    application_process + requirements + benefits + contact info etc, concatenated).
+    context: optional dictionary with specific form fields (e.g. application_process, company, title, description).
 
     Returns a list of dicts, one per MATCHED rule only:
-        {indicator, description, severity, evidence}
+        {indicator, description, severity, evidence, field}
     """
     text = raw_text or ""
     text_lower = text.lower()
@@ -110,29 +170,42 @@ def detect_red_flags(raw_text: str, context: dict = None):
     for rule in RED_FLAG_RULES:
         match = re.search(rule["pattern"], text_lower, flags=re.IGNORECASE)
         if match:
-            start = max(match.start() - 20, 0)
-            end = min(match.end() + 20, len(text))
+            start = max(match.start() - 25, 0)
+            end = min(match.end() + 25, len(text))
             evidence = text[start:end].strip()
+
+            src_fields = _attribute_source_fields(rule["pattern"], context)
+            field_name = ", ".join(src_fields) if src_fields else "Posting Text"
+
             findings.append({
                 "indicator": rule["indicator"],
                 "description": rule["description"],
                 "severity": rule["severity"],
                 "evidence": f"...{evidence}..." if evidence else match.group(0),
+                "field": field_name,
             })
 
     # Compound rule: "no experience required" AND a high-pay mention together
-    no_exp = re.search(r"no\s+experience\s+(required|needed)", text_lower)
-    high_pay = re.search(r"₹\s?[5-9]\d,000|earn\s+up\s+to|lakh|rs\.?\s?[2-9]\d{3}\s*(?:\/|\s*per\s*)day", text_lower)
+    no_exp = re.search(r"no\s+previous\s+experience\s+required|no\s+experience\s+(?:required|needed)", text_lower)
+    high_pay = re.search(r"₹\s?[3-9]\d,000|₹\s?\d{2,3},\d{3}\s*-\s*₹?\s?\d{2,3},\d{3}|earn\s+up\s+to|lakh|rs\.?\s?[2-9]\d{3}\s*(?:\/|\s*per\s*)day", text_lower)
     if no_exp and high_pay:
+        fields = []
+        if context.get("requirements") and re.search(r"no\s+(?:previous\s+)?experience", str(context.get("requirements")), re.I):
+            fields.append("Requirements")
+        if context.get("benefits") and re.search(r"no\s+(?:previous\s+)?experience", str(context.get("benefits")), re.I):
+            fields.append("Benefits")
+        if context.get("description") and re.search(r"no\s+(?:previous\s+)?experience", str(context.get("description")), re.I):
+            fields.append("Job Description")
         findings.append({
             "indicator": "No experience required + unusually high pay",
-            "description": "Combination often seen in scam postings targeting inexperienced applicants.",
+            "description": "Combination frequently seen in scam postings targeting inexperienced job seekers with unrealistic remuneration.",
             "severity": "High",
             "evidence": f'"{no_exp.group(0)}" + "{high_pay.group(0)}"',
+            "field": ", ".join(fields) if fields else "Benefits / Salary",
         })
 
     # Missing employer check
-    comp_input = context.get("company", "").strip().lower()
+    comp_input = str(context.get("company", "") or "").strip().lower()
     is_comp_missing = comp_input in ("", "select", "unknown", "none", "n/a")
     if is_comp_missing:
         findings.append({
@@ -140,6 +213,7 @@ def detect_red_flags(raw_text: str, context: dict = None):
             "description": "No company name is provided, making official employer verification impossible.",
             "severity": "Medium",
             "evidence": "Company field is empty or unspecified",
+            "field": "Company",
         })
 
     # Abnormally brief / low-detail check
@@ -152,6 +226,7 @@ def detect_red_flags(raw_text: str, context: dict = None):
             "description": f"The entire submission contains only {len(words)} words. Legitimate job advertisements provide comprehensive duties, prerequisites, and company context.",
             "severity": sev,
             "evidence": text.strip()[:80] + ("..." if len(text.strip()) > 80 else ""),
+            "field": "Overall Posting",
         })
 
     return findings

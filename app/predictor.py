@@ -93,6 +93,12 @@ def build_input_row(user_input: dict) -> pd.DataFrame:
     for col in TEXT_COLS:
         row[col] = str(user_input.get(col, "") or "")
 
+    app_process = str(user_input.get('application_process', '') or '').strip()
+    if app_process:
+        desc = row.get('description', '')
+        row['description'] = f"{desc}\n\nApplication Process:\n{app_process}" if desc else app_process
+    row['application_process'] = app_process
+
     for col in CATE_COLS:
         val = user_input.get(col)
         if val in (None, "", "Select", "None", "Unspecified", "Not Specified", "Not Applicable / None"):
