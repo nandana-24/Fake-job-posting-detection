@@ -235,7 +235,7 @@ new.py
 # Streamlit app configuration
 .streamlit/secrets.toml
 
-# Trained model artifacts (large binary files excluded; structure preserved via .gitkeep)
-models/*.joblib
+# Trained model artifacts (tracked for Streamlit deployment and inference)
+!models/*.joblib
 !models/.gitkeep
 

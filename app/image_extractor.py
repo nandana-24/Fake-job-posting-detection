@@ -37,6 +37,16 @@ def get_configured_api_key(api_key: str = "") -> str:
     if env_key and env_key != "PASTE_YOUR_GEMINI_API_KEY_HERE":
         return env_key
 
+    # Attempt to load from Streamlit secrets (Streamlit Cloud or local secrets.toml)
+    try:
+        import streamlit as st
+        if hasattr(st, "secrets") and "GEMINI_API_KEY" in st.secrets:
+            sec_key = str(st.secrets["GEMINI_API_KEY"]).strip()
+            if sec_key and sec_key != "PASTE_YOUR_GEMINI_API_KEY_HERE":
+                return sec_key
+    except Exception:
+        pass
+
     # Attempt to load from project-root or local .env file
     for env_path in [Path(__file__).resolve().parent.parent / ".env", Path(__file__).resolve().parent / ".env"]:
         if env_path.exists():
@@ -138,7 +148,14 @@ def extract_with_gemini_vision(images_input, mime_type: str = "image/png", api_k
         }
     }
 
-    models_to_try = ["gemini-3.8-flash","gemini-3.7-flash","gemini-3.6-flash","gemini-3.5-flash"]
+    models_to_try = [
+        "gemini-2.0-flash",
+        "gemini-1.5-flash",
+        "gemini-2.0-flash-lite",
+        "gemini-flash-latest",
+        "gemini-3.1-flash-lite",
+        "gemini-3.8-flash",
+    ]
     last_error = "Unable to connect or receive candidates from Gemini Vision API"
     for model_name in models_to_try:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={key}"
