@@ -5,6 +5,14 @@ Streamlit front-end for the Explainable Job Scam Risk Analyzer.
 Run with:  .\venv\Scripts\streamlit.exe run app/app.py
 """
 
+import sys
+from pathlib import Path
+
+# Ensure local app directory is in sys.path for reliable module resolution
+APP_DIR = Path(__file__).resolve().parent
+if str(APP_DIR) not in sys.path:
+    sys.path.insert(0, str(APP_DIR))
+
 import streamlit as st
 from predictor import predict_posting, load_artifacts
 from explainer import explain_posting
@@ -19,6 +27,15 @@ st.set_page_config(page_title="Job Scam Risk Analyzer", page_icon="🔎", layout
 # -------------------------------------------------------------
 st.markdown("""
 <style>
+/* Clean visitor view: hide top GitHub icon and header toolbar */
+header[data-testid="stHeader"] {
+    visibility: hidden;
+    height: 0px !important;
+}
+.main .block-container {
+    padding-top: 2rem !important;
+}
+
 /* High-visibility primary submit button */
 div[data-testid="stFormSubmitButton"] > button,
 div.stButton > button {
